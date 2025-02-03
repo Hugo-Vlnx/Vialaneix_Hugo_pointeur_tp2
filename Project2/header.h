@@ -2,8 +2,9 @@
 #define header_h
 
 typedef struct  {
-	float frequence[12], duree[12];
-}note;
-note* creerNote(int place_note);
-
+	float frequence, duree;
+}Note;
+Note* creerNote();
+void simulerNote(Note** notes, int nb_notes);
+void libererNote(Note* notes);
 #endif
