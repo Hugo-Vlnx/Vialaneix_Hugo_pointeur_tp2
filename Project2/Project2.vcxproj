@@ -130,6 +130,7 @@
   <ItemGroup>
     <ClCompile Include="defFct.c" />
     <ClCompile Include="exo3.c" />
+    <ClCompile Include="testFct.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="header.h" />
