@@ -20,6 +20,7 @@
 *.filters 
 *.vs/ 
 *.sln 
+*.vcxproj
 # Ignore les dossiers de build 
 Debug/ 
 Release/ 
