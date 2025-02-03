@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <windows.h>
 #include "header.h"
 
 
@@ -9,8 +10,10 @@ int main() {
 	  392.00, 415.30, 440.00, 466.16, 493.88 };
 	Note** notes = malloc(nb_note * sizeof(Note));
 	for (int i = 0; i < nb_note; i++) {
-		notes[i]->frequence = frequencies[i];
 		notes[i] = creerNote();
+		notes[i]->frequence = frequencies[i];
+		notes[i]->duree = 2000.00;
+		
 	}
 	simulerNote(notes, nb_note);
 	libererNote(notes);
